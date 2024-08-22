@@ -1,5 +1,6 @@
 package com.fastcampuspay.membership.adapter.in.web;
 
+import com.fastcampuspay.common.WebAdapter;
 import com.fastcampuspay.membership.application.port.in.FindMembershipCommand;
 import com.fastcampuspay.membership.application.port.in.FindMembershipUseCase;
 import com.fastcampuspay.membership.domain.Membership;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+@WebAdapter
 @RestController
 @RequiredArgsConstructor
 public class FindMembershipController {

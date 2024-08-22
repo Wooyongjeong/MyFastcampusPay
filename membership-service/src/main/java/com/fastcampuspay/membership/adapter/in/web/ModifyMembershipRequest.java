@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterMembershipRequest {
+public class ModifyMembershipRequest {
     private String name;
     private String email;
     private String address;
+    private boolean isValid;
     private boolean isCorp;
 }
